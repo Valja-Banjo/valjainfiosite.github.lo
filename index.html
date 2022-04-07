@@ -3,101 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <title>valja</title>
+    <link href="styles.css" rel="stylesheet" />
   </head>
+
   <body>
+    <div class="container">
+      <div class="info">
+        <img src="DSC_2248.jpeg" alt="тут фотка моей группы" class="avatarka" />
 
-    <table cellspacing="15">
-      <tr>
-        <td><img width="200" src="DSC_2248.jpeg" alt="тут фотка моей группы" /></td>
-        <td><h1>валя</h1>
-      <p> <em>я изучаю <strong> программирование </strong> 
-      </em> </p>
-      <p>у меня есть группа, и я рисую свой мульт сериал! а еще я люблю кататься на скейтборде и стараюсь не есть сладкое) </p>
-</td>
-      </tr>
-    </table>
+        <div class="info-text">
+          <h1>привет я Валя!</h1>
+          <hr />
+          <p>я изучаю <strong> программирование </strong></p>
 
-      <hr>
+          <hr />
+          <p>
+            у меня есть группа, и я рисую свой мульт сериал! а еще я люблю
+            кататься на скейтборде и стараюсь не есть сладкое)
+          </p>
 
-      <h2> мои соц сети </h2>
-      <ul type="circle">
-        <li><a  href="https:/vk.com/valja_krutikov" target="_blank" >VK</a> </li>
-      </ul>
-      
-      <hr>
-      
-      <h2> мои хобби </h2>
-      <ol>
-        <li>сочинять музыку</li>
-        <li>рисовать на бумаге и в фотошопе</li>
-        <li>заниматся спортом</li>
-      </ol>
+          <div class="card">
+            <h4>мои соц сети</h4>
 
-      <hr>
+            <a href="https:/vk.com/valja_krutikov" target="_blank">VK</a>
+            |
+            <a href="https:/t.me/valja_boy" target="_blank">Telegram</a>
+          </div>
+        </div>
+      </div>
 
-     
+      <div class="card bg-yellow">
+        <h2>мои хобби</h2>
+        <ol class="list">
+          <li>сочинять музыку</li>
+          <li>рисовать на бумаге и в фотошопе</li>
+          <li>заниматся спортом</li>
+        </ol>
+      </div>
 
       <!-- <h2>телефон и email</h2>
       <ol type="I" >
         <li>89516807060</li>
         <li>valja90@gmail.cim</li>
       </ol> -->
-      
-      <hr>
-
-      <h2> мои активные музыкальные проекты  </h2>
-      <table border="2" >
-        <thead>
+      <div class="card bg-red">
+        <h2>мои музыкальные проекты</h2>
+        <table class="table">
           <tr>
-            <th>название группы</th>
-            <th>жанр</th>
-            <th>дата основания</th>
+            <td>Elektra Monsterz</td>
+            <td>indie rock</td>
+            <td>2006 - 2014</td>
           </tr>
-        </thead>
-        <tbody>
+
           <tr>
-          <td>ghost hippies</td>
-          <td>indie folk</td>
-          <td>2014</td>
-        </tr>
-         <tr>
-          <td>элма и пугал из оghost hippies</td>
-          <td>alternative indie </td>
-          <td>2020</td>
-        </tr>
-        </tbody>
-        <tfoot>  </tfoot>
-     
-      </table>
+            <td>ghost hippies</td>
+            <td>indie folk</td>
+            <td>2014 - activ now</td>
+          </tr>
 
-        <hr>
+          <tr>
+            <td>angelic milk</td>
+            <td>garage rock</td>
+            <td>2015 - 2019</td>
+          </tr>
 
-      <h2>Youtube clips</h2>
-      <a href="youtube.html">посмотреть список</a>
+          <tr>
+            <td>METI</td>
+            <td class="temp">twee punk</td>
+            <td>2015 - 2017</td>
+          </tr>
 
-       <h2>связатся со мной</h2>
-      <form action="/">
-        <label for="name">ваше имя:</label>
-        <input type="text" id="name" placeholder="начните вводить имя...">
-    
-        <br>
+          <tr>
+            <td>элма и пугал из оghost hippies</td>
+            <td>alternative indie</td>
+            <td>2020 - activ now</td>
+          </tr>
+        </table>
+      </div>
 
-        <label for="email">ваш email:</label>
-        <input type="text" id="email" placeholder="начните вводить email">
-      
-        
+      <div class="card bg-blue">
+        <h2>Youtube clips</h2>
+        <ul class="list-link">
+          <li>
+            <a href="https://vk.com/video/playlist/56151753_4" target="_blank">
+              My Lo-fi life (это сделал я! или там есть я:)
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact">
+        <div class="card">
+          <h2>связатся со мной</h2>
+          <form action="/">
+            <div class="name-email">
+              <div class="form-group">
+                <label for="name">ваше имя:</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="начните вводить имя..."
+                />
+              </div>
 
-        <br>
+              <div class="form-group">
+                <label for="email">ваш email:</label>
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="начните вводить email"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="text">ваше сщщбщение:</label>
+              <br />
+              <textarea id="text" cols="30" rows="2"></textarea>
+            </div>
 
-         <label for="text">ваше сщщбщение:</label>
-         <br>
-        <textarea  id="text" cols="30" rows="10"></textarea> 
-        
-        <br>
+            <input class="btn" type="submit" value="связаться" />
+          </form>
+          <!-- <div class="position"> -->
+            <div class="box"></div>
+          <!-- </div> -->
+        </div>
+      </div>
 
-        <input type="submit" value="связаться">
+      <!-- <div class="box-model">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div> -->
 
-      </form>
-    </body>
+      <div style="margin-bottom: 500px"></div>
+    </div>
+  </body>
 </html>
-
